@@ -34,7 +34,7 @@ const emailSenha = senhaEmailAmbiente;
 | Implementação da lógica | Desenvolvimento da lógica de Criptografia e Descriptografia, além de outras necessárias para o funcionamento do sistema. |
 | Versionamento | Utilização do GIT para versionamento além de adotar um padrão para os commits |
 
-## 💻 Para ver a aplicação [Clique aqui](https://cripto-correio-elegante.vercel.app) .
+## 💻 Para ver a aplicação [Clique aqui](https://cripto-correio-elegante-producao.vercel.app/recado.html) .
 
 
 ## 📑 Para ver o design no figma [Clique aqui](https://www.figma.com/file/xoejOlR3byOhhFENUpzszY/Cripto-Correio-Elegante?type=design&node-id=0%3A1&mode=design&t=4wS2jMDc3oQyjM2v-1) .
