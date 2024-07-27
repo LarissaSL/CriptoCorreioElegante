@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./assets/css/global.css">
+    <link rel="stylesheet" href="./assets/css/recado.css">
+
+    <link rel="shortcut icon" href="./assets/img/logoFundo.png" type="image/x-icon">
+
+    <title>Cripto Correio Elegante</title>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <img src="./assets/img/logo.png" alt="Logo Cripto Correio Elegante">
+        </a>
+
+        <div class="barraNav"></div>
+        <nav class="menuNav">
+            <a href="index.html" class="opcaoNav">Inicio</a>
+            <a href="recado.html" class="opcaoNav">Recado</a>
+        </nav>
+        <div class="barraNav"></div>
+    </header>
+
+    <main>
+        <section class="sessaoInicioConteudo">
+            <h1 class="titulo">Hora de criar ou desvendar sua Mensagem!</h1>
+            <p class="texto"><i>Caso precise de ajuda 
+                <a class="ajuda" href="index.html#tutorialRemetente"><strong>Clique aqui</strong></i>
+                </a>
+                <p class="aviso">
+                    <img src="./assets/img/atencao.png" alt="Icone de Atenção">
+                    <i>Por favor digite sua mensagem apenas com <strong>letras minúsculas</strong> e <strong>sem acentos</strong></i></p>
+            </p>
+
+            <div class="acoesDoUsuario">
+                <div class="entradaDoUsuario">
+                    <textarea class="entrada" id="entradaUser" placeholder="Digite a mensagem aqui..."></textarea>
+                    
+                    <div class="botoesDupla">
+                        <button class="acao" id="botaoCriptografar" onclick="criptografar()">Criptografar</button>
+                        <button class="acao" id="botaoDescriptografar" onclick="descriptografar()">Descriptografar</button>
+                    </div>
+                </div>
+                
+                <div class="saidaDoUsuario">
+                    <textarea class="saida" id="resultado" placeholder="Sua mensagem criptografada ou descriptografa aparecerá aqui..."></textarea>
+                    
+                    <div class="botoesTrio">
+                        <button class="acao" id="botaoCopiar" onclick="copiarTexto()">Copiar</button>
+                        <button class="acao" id="botaoApagar" onclick="apagarTexto()">Apagar</button>
+                        <button class="acao" id="botaoEnviarDesabilitado" onclick="enviarTexto()" disabled>Enviar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="modalDeFeedback" class="modalGenerico">
+                <div id="cabecalhoModalGenerico">
+                    <button class="texto" id="modalGenericoFechar" onclick="fecharModal('modalDeFeedback')">X</button>
+                </div>
+                
+                <div id="modalGenericoConteudo">
+                    <img src="" alt="" id="iconeDeFeedback">
+                    <p class="texto" id="modalGenericoTexto"></p>
+                </div> 
+            </div>
+
+            <div id="modalDoEnviar" class="modalEnviar">
+                <div id="cabecalhoModalGenerico">
+                    <button class="texto" id="modalGenericoFechar" onclick="fecharModal('modalDoEnviar')">X</button>
+                </div>
+
+                <div class="modalEnviarConteudo">
+                    <h2 class="enviarTitulo">Hora de Enviar!</h2>
+                    <div class="enviarInformacoesDestinatario">
+                        <p class="texto">Digite um nome para ser sua assinatura</p>
+                        <textarea class="entrada" id="emailRemetente" placeholder="Ex.: Admirador(a) Secreto(a)"></textarea>
+
+                        <p class="texto">Digite o e-mail de quem vai receber sua mensagem por favor.</p>
+                        <textarea class="entrada" id="emailDestinatario" placeholder="E-mail"></textarea>
+
+                        <span class="avisoEmail"><strong>Atenção</strong></span>
+                        <span class="avisoEmail">
+                            Por favor confira se o e-mail está correto e não se preocupe, não salvamos os dados de ninguém em nossas plataforma.
+                        </span>
+                    </div>
+
+                    <div class="enviarMensagem">
+                        <h3 class="enviarDestaque">Mensagem criptografada</h3>
+                        <textarea class="saida" id="enviarMensagem" placeholder="" readonly></textarea>
+                        
+                        <div class="emailBotoes">
+                            <button class="acao" id="emailBotaoVoltar" onclick="fecharModal('modalDoEnviar')">Voltar</button>
+                            <button class="acao" id="emailBotaoEnviar" onclick="enviarEmail()">Enviar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="conteudoFooter">
+            <div class="dev">
+                <div class="icones">
+                    <a href="https://github.com/LarissaSL" target="_blank" class="footerLink">
+                        <img src="./assets/img/github.png" alt="Logo do GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/larissasilvasl/" target="_blank" class="footerLink">
+                        <img src="./assets/img/linkedin.png" alt="Logo do LinkedIn">
+                    </a>
+                </div>
+                <p class="texto">
+                    Design e Desenvolvimento por <strong>Larissa Silva</strong>
+                </p>
+            </div>
+
+            <div class="design">
+                <div class="icones">
+                    <a href="http://www.freepik.com" target="_blank" class="footerLink">
+                        <img src="./assets/img/freepik.png" alt="Logo do Freepik">
+                    </a>
+                </div>
+                <p class="texto">
+                    Imagens e Icones Designed by Freepik
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./assets/js/main.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>
