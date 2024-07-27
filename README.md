@@ -12,6 +12,16 @@ O principal objetivo do Cripto Correio Elegante é oferecer um sistema de decodi
 - **Forma lúdica e mais nerd de Correio Elegante:** O remetente consegue mandar a mensagem criptografada e o Destinatário consegue desvendar essa mensagem.
 - **Envio de E-mails:** Permitir que o Remetente envie a mensagem criptografada por e-mail.
 
+## Passo para configuração de Variaveis de Ambiente
+```js
+const emailCripto = emailCriptoAmbiente;
+const emailSenha = senhaEmailAmbiente;
+```
+
+- Troque o emailCriptoAmbiente para a Variavel de Ambiente configurada no seu Ambiente de Produção ou Testes
+- Troque o senhaEmailAmbiente para a Variavel de Ambiente configurada no seu Ambiente de Produção ou Testes
+OBS.: Esse é um passo importante para conseguir enviar esses e-mails, por questões de segurança não foi exposto nenhuma senha da aplicação.
+
 
 ## ⚙️ Passos adotados para o Desenvolvimento do Projeto
 | Passo | Objetivo a ser alcançado |
