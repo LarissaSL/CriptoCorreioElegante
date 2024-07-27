@@ -20,7 +20,9 @@ const emailSenha = senhaEmailAmbiente;
 
 - Troque o emailCriptoAmbiente para a Variavel de Ambiente configurada no seu Ambiente de Produção ou Testes
 - Troque o senhaEmailAmbiente para a Variavel de Ambiente configurada no seu Ambiente de Produção ou Testes
-OBS.: Esse é um passo importante para conseguir enviar esses e-mails, por questões de segurança não foi exposto nenhuma senha da aplicação.
+
+
+`OBS.: Esse é um passo importante para conseguir enviar esses e-mails, por questões de segurança não foi exposto nenhuma senha da aplicação.`
 
 
 ## ⚙️ Passos adotados para o Desenvolvimento do Projeto
